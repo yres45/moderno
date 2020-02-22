@@ -11,9 +11,6 @@ $(function(){
         arrows:false,
         slidesToShow: 4,
         slidesToScroll:4
-
-
-
     });
 
 
@@ -27,6 +24,8 @@ $(function(){
             prefix: "$"
         
     });
+
+   
 
 $('.icon-th-list').on('click',function(){
     $('.products__item').addClass('list');
@@ -43,7 +42,17 @@ $('.icon-th-large').on('click',function(){
     $('.icon-th-list').removeClass('active');
 
 });
+
+// .menu__btn
+$('.menu__btn').on('click',function(){
+    $('.menu__list').slideToggle();
+});
+
+$('.header__btn-menu').on('click',function(){
+    $('.header__box').toggleClass('active');
+});
     
+
     var mixer = mixitup ('.products__inner-box');
 
     
