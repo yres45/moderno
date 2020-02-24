@@ -9,6 +9,7 @@
   "author": "yres",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.7",
     "css-min": "^1.0.0",
     "gulp": "^4.0.2",
