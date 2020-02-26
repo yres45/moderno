@@ -9,8 +9,40 @@ $(function(){
     $('.product-slider__inner').slick({
         dots:true,
         arrows:false,
-        slidesToShow: 4,
-        slidesToScroll:4
+        slidesToShow: 3,
+        slidesToScroll:3,
+        responsive:[
+            {
+            breakpoint:1900,
+            settings:{
+                slidesToShow:3,
+                slidestpScroll:3,
+                infinite:true,
+                dots:true
+            }
+
+        },
+        {
+            breakpoint:1441,
+            settings:{
+                slidesToShow:2,
+                slidestpScroll:1,
+                
+            }
+
+        },
+        {
+            breakpoint:801,
+            settings:{
+                slidesToShow:1,
+                slidestpScroll:1,
+                
+            }
+
+        },
+
+        ]
+
     });
 
     $('.product-one__tabs .tab, .settings__taabs .tab').on('click', function(event) {
@@ -41,7 +73,7 @@ $('.icon-th-list').on('click',function(){
 
 });
 
-
+$('input[type="file"],select').styler();
 
 $('.icon-th-large').on('click',function(){
     $('.products__item').removeClass('list');
